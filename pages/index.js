@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
 import { search, mapImageResources } from '../lib/cloudinary'
 
 export async function getStaticProps() {
@@ -23,15 +24,43 @@ export default function Home({ images }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <section className="grid gap-4 grid-cols-2 grid-rows-2 mx-3 pl-3">
+        <div>
+          <Link href="/photographs">
+          <Image
+            className="border-4 border-grey-light"
+            src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+            alt="Galaxy"
+            layout="responsive"
+            width={400}
+            height={250}
+          />
+          </Link>
+        </div>
+        <div>
+          <Link href="/photographs">
+          <Image
+            className="border-4 border-grey-light"
+            src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+            alt="Galaxy"
+            layout="responsive"
+            width={400}
+            height={250}
+          />
+          </Link>
+        </div>
+        <div>
+          <Link href="/photographs">
+          <Image
+            className="border-4 border-grey-light"
+            src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+            alt="Galaxy"
+            layout="responsive"
+            width={400}
+            height={250}
+          />
+          </Link>
+        </div>
       </section>
     </Layout>
   );

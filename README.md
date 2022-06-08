@@ -1,2 +1,2 @@
 # c-s-photography
-Photography Portfolio in Next.js
+Photography Portfolio using Next.js, Cloudinary and Tailwind

@@ -4,18 +4,14 @@
 
 html,
 body {
+  font-family: 'proxima-nova';
+  color: #d9d9d9;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: linear-gradient(0deg, rgba(24, 25, 27, 0.7), rgba(24, 25, 27, 0.7)), url(https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg);
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('/fonts/Proxima-Nova-Font.otf');
 }
