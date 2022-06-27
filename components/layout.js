@@ -7,7 +7,7 @@ export const siteTitle = 'Cornelia Schulz Photography'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="flex flex-col h-screen justify-between mx-4 my-3 max-w-7xl">
+    <div className="flex flex-col h-screen justify-between mx-auto my-3 max-w-7xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -23,7 +23,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header>
+      <header className="relative">
         <Navbar />
       </header>
       <main>{children}</main>
