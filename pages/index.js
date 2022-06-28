@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
-import Link from 'next/link'
 import { search, mapImageResources } from '../lib/cloudinary'
 
 export async function getStaticProps() {
@@ -23,7 +22,7 @@ export default function Home({ images }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="grid gap-5 grid-cols-2 grid-rows-2 mx-3 pl-3">
+      <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 pl-3">
         <div className="relative border-solid border-8 border-grey-light-800">
           <a href="/photographs">
           <Image
