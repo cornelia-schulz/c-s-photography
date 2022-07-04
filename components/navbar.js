@@ -95,13 +95,13 @@ export default function Navbar() {
                 <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
                     <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                         <li>
-                            <Link href="/" className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded" aria-current="page">Home</Link>
+                            <a href="/" className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded hover:text-orange hover:underline" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <Link href="/about" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">About</Link>
+                            <a href="/about" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0 hover:text-orange hover:underline">About</a>
                         </li>
                         <li>
-                            <Link href="/contact" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</Link>
+                            <a href="/contact" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0 hover:text-orange hover:underline">Contact</a>
                         </li>
                     </ul>
                 </div>
