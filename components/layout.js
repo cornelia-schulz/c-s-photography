@@ -5,9 +5,9 @@ import Footer from './footer'
 const name = 'Cornelia'
 export const siteTitle = 'Cornelia Schulz Photography'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, pageClass }) {
   return (
-    <div className="flex flex-col h-screen justify-between mx-auto my-3 max-w-7xl">
+    <div className="flex flex-col h-screen justify-between px-5 mx-4 lg-mx-auto my-3 max-w-7xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -23,8 +23,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="relative">
-        <Navbar />
+      <header id="top" className="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l">
+        <Navbar page={pageClass} />
       </header>
       <main>{children}</main>
       <Footer />

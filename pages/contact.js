@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 
 export default function Contact() {
     return (
-    <Layout>
+    <Layout page="contact">
         Contact me
     </Layout>
     )

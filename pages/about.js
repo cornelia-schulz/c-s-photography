@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <Layout>
+    <Layout page="about">
       <h1 className="text-2xl text-center mb-6">About Cornelia Schulz</h1>
       <main className="flex">
-        <article className="flex-auto w-40 mr-3">
+        <article className="flex-auto w-40 mr-4">
           <p className="mb-3">
             Quite simply, I just love taking photos. Blending this with my
             fascination with the natural world provides me with heaps of
@@ -27,21 +27,21 @@ export default function About() {
           <p className="mb-3">
             You can follow me on{" "}
             <a
-              className="hover:text-orange hover:underline"
+              className="text-orange hover:underline"
               href="https://instagram.com/corneliaschulzphotography/"
             >
               Instagram
             </a>
             ,{" "}
             <a
-              className="hover:text-orange hover:underline"
+              className="text-orange hover:underline"
               href="https://www.facebook.com/pages/Cornelia-Schulz-Photography/117213031666328?ref=hl"
             >
               Facebook
             </a>{" "}
             and{" "}
             <a
-              className="hover:text-orange hover:underline"
+              className="text-orange hover:underline"
               href="https://www.flickr.com/photos/cornelia-schulz/"
             >
               Flickr
@@ -51,20 +51,22 @@ export default function About() {
           <p className="mb-3">
             I'm a member of{" "}
             <a
-              className="hover:text-orange hover:underline"
+              className="text-orange hover:underline"
               href="https://www.naturefirstphotography.org/"
             >
               Nature First.
             </a>
           </p>
         </article>
-        <aside className="border-8">
-          <Image
-            src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
-            alt="Galaxy"
-            width={300}
-            height={300}
-          />
+        <aside>
+          <div className="border-8">
+            <Image
+              src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+              alt="Galaxy"
+              width={300}
+              height={300}
+            />
+          </div>
         </aside>
       </main>
     </Layout>

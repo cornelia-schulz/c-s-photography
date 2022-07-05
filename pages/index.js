@@ -6,19 +6,19 @@ import { search, mapImageResources } from '../lib/cloudinary'
 export async function getStaticProps() {
   const results = await search({
     expression: 'folder=""'
-  });
+  })
   const { resources } = results
   const images = mapImageResources(resources)
   return {
     props: {
       images
     },
-  };
+  }
 }
 
 export default function Home({ images }) {
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -69,6 +69,8 @@ export default function Home({ images }) {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </>
+  )
 }
+
+Home.pageClass = 'home'
