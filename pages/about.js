@@ -49,7 +49,7 @@ export default function About() {
             .
           </p>
           <p className="mb-3">
-            I'm a member of{" "}
+            I&apos;m a member of{" "}
             <a
               className="text-orange hover:underline"
               href="https://www.naturefirstphotography.org/"

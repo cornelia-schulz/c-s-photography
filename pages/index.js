@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import { search, mapImageResources } from '../lib/cloudinary'
 
@@ -24,7 +25,7 @@ export default function Home({ images }) {
       </Head>
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 pl-3">
         <div className="relative border-solid border-8 border-grey-light-800">
-          <a href="/photographs">
+          <Link href="/photographs">
           <Image
             className="photograph"
             src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
@@ -33,13 +34,13 @@ export default function Home({ images }) {
             width={400}
             height={250}
           />
-          </a>
+          </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
-            <a href="/photographs">Photographs</a>
+            <Link href="/photographs">Photographs</Link>
           </div>
         </div>
         <div className="relative border-solid border-8 border-grey-light-800">
-          <a href="/about">
+          <Link href="/about">
           <Image
             className="photograph"
             src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
@@ -48,13 +49,13 @@ export default function Home({ images }) {
             width={400}
             height={250}
           />
-          </a>
+          </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </div>
         </div>
         <div className="relative border-solid border-8 border-grey-light-800">
-          <a href="/contact">
+          <Link href="/contact">
           <Image
             className="photograph"
             src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
@@ -63,9 +64,9 @@ export default function Home({ images }) {
             width={400}
             height={250}
           />
-          </a>
+          </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
-            <a href="/contact">Contact</a>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
       </section>
