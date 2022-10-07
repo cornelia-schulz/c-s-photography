@@ -8,27 +8,18 @@ export default function Navbar({page}) {
   return (
     <nav
       id="site-menu"
-      className="flex flex-col sm:flex-row w-full justify-between items-center py-1 shadow sm:shadow-none"
+      className="w-full py-1 shadow sm:shadow-none"
     >
-      <div className="w-full self-start sm:self-center flex flex-row flex-no-wrap justify-between items-center">
-        <a href="/">
+      <div className="w-full">
+        <a href="/" className="mx-auto">
           <Image
-            className="h-8 w-8 mr-2"
+            className="h-8 w-7 mx-auto"
             src="/images/CS_photgraphy_transparent-white.png"
             alt="Cornelia Schulz Photography Logo"
             width={290}
             height={95}
           />
         </a>
-        <button
-          id="menuBtn"
-          className="hamburger block sm:hidden focus:outline-none"
-          type="button"
-          onClick={page}
-        >
-          <span className="hamburger__top-bun"></span>
-          <span className="hamburger__bottom-bun"></span>
-        </button>
         <ul
           id="menu"
           className="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden"
