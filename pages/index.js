@@ -35,7 +35,7 @@ export default function Home({ images }) {
             height={250}
           />
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link href="/photographs">Photographs</Link>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Home({ images }) {
             height={250}
           />
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link href="/about">About</Link>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Home({ images }) {
             height={250}
           />
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-5xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link href="/contact">Contact</Link>
           </div>
         </div>

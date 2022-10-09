@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <Layout page="about">
+    <div page="about">
       <h1 className="text-2xl text-center mb-6">About Cornelia Schulz</h1>
       <main className="flex">
         <article className="flex-auto w-40 mr-4">
@@ -69,6 +69,6 @@ export default function About() {
           </div>
         </aside>
       </main>
-    </Layout>
+    </div>
   );
 }

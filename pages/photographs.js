@@ -6,9 +6,9 @@ import Layout from '../components/layout'
 export default function Photographs() {
     return (
     <>
-      <Layout>
+      <div>
         <Head>
-          <title>Image Galleries - Cornelia Schulz Photography</title>
+          <title>Galleries - Cornelia Schulz Photography</title>
         </Head>
         <h1>Photographs</h1>
         <Image
@@ -22,7 +22,7 @@ export default function Photographs() {
             <a>Back to home</a>
           </Link>
         </h2>
-      </Layout>
+      </div>
     </>
     );
   }
