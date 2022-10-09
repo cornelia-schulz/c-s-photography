@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Footer(){
     const currentYear = new Date().getFullYear()
     return (
-        <footer className="mb-2">
+        <footer className="my-2">
             <div className="flex justify-between">
                 <div className="ml-7 flex items-center">
                     2013-{currentYear} &copy; Cornelia Schulz

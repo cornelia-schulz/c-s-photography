@@ -26,7 +26,7 @@ export default function Layout({ children, pageClass }) {
       <header id="top" className="w-full flex flex-col fixed relative bg-white pin-t pin-r pin-l">
         <Navbar page={pageClass} />
       </header>
-      <main>{children}</main>
+      <main className="mb-4">{children}</main>
       <Footer />
     </div>
   );

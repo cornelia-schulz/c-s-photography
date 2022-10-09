@@ -9,7 +9,7 @@ export default function Navbar({page}) {
   return (
     <nav
       id="site-menu"
-      className="w-full py-1 shadow sm:shadow-none"
+      className="w-full shadow sm:shadow-none"
     >
       <div className="flex flex-col items-center">
         <Link href="/">
@@ -22,31 +22,41 @@ export default function Navbar({page}) {
         </Link>
         <ul
           id="menu"
-          className="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0"
+          className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0"
         >
-          <li className="mr-5">
+          <li className="sm-mr-5 text-center">
             <Link
               href="/"
-              className={`text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline ${page === "home" ? "text-orange" : ""}`}
               aria-current="page"
             >
-              Home
+              <a
+                className={`text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline ${page === "home" ? "text-orange" : ""}`}
+              >
+                Home
+              </a>
             </Link>
           </li>
-          <li>
+          <li className="text-center">
             <Link
               href="/about"
-              className="text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline"
             >
-              About
+              <a
+                className="text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline"
+              >
+                About
+              </a>
+              
             </Link>
           </li>
-          <li className="ml-5">
+          <li className="sm-ml-5 text-center">
             <Link
               href="/contact"
-              className="text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline"
             >
-              Contact
+              <a
+                className="text-white w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2 hover:text-orange hover:underline"
+              >
+                Contact
+              </a>
             </Link>
           </li>
         </ul>
