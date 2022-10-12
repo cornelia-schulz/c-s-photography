@@ -28,7 +28,7 @@ export default function Navbar({page}) {
   return (
     <nav
       id="site-menu"
-      className="w-full shadow sm:shadow-none"
+      className="w-full"
     >
       <div className="flex flex-col items-center">
         <Link href="/">
@@ -50,7 +50,7 @@ export default function Navbar({page}) {
                 aria-current="page"
               >
                 <a
-                  className={`text-white w-full no-underline sm:w-auto 2 hover:text-orange hover:underline ${page === "home" ? "text-orange" : ""}`}
+                  className={`text-white w-full no-underline sm:w-auto 2 hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : ""}`}
                 >
                   {menuItem.name}
                 </a>

@@ -1,4 +1,5 @@
-import Layout from "../components/layout"
+import Navbar from '../components/navbar'
+import Layout from '../components/layout'
 import Image from 'next/image'
 
 export default function About() {
@@ -70,5 +71,14 @@ export default function About() {
         </aside>
       </main>
     </div>
-  );
+  )
+}
+
+About.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Navbar page="about" />
+      {page}
+    </Layout>
+  )
 }

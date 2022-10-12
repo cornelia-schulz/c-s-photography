@@ -1,3 +1,4 @@
+import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 
 export default function Contact() {
@@ -7,3 +8,12 @@ export default function Contact() {
     </div>
     )
 }
+
+Contact.getLayout = function getLayout(page) {
+    return (
+      <Layout>
+        <Navbar page="contact" />
+        {page}
+      </Layout>
+    )
+  }

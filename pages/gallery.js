@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
+import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 
 export default function Photographs() {
@@ -24,5 +25,14 @@ export default function Photographs() {
         </h2>
       </div>
     </>
-    );
+    )
+  }
+
+  Photographs.getLayout = function getLayout(page) {
+    return (
+      <Layout>
+        <Navbar page="photographs" />
+        {page}
+      </Layout>
+    )
   }
