@@ -32,12 +32,14 @@ export default function Navbar({page}) {
     >
       <div className="flex flex-col items-center">
         <Link href="/">
-          <Image
-            src="/images/CS_photgraphy_transparent-white.png"
-            alt="Cornelia Schulz Photography Logo"
-            width={250}
-            height={80}
-          />
+          <a>
+            <Image
+              src="/images/CS_photgraphy_transparent-white.png"
+              alt="Cornelia Schulz Photography Logo"
+              width={250}
+              height={80}
+            />
+          </a>
         </Link>
         <ul
           id="menu"
@@ -60,5 +62,5 @@ export default function Navbar({page}) {
         </ul>
       </div>
     </nav>
-  );
+  )
 }
