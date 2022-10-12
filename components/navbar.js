@@ -39,9 +39,12 @@ export default function Navbar({page}) {
             height={80}
           />
         </Link>
+        <input type="checkbox" name="menu" id="menu" className="peer" sm-invisible/>
+        <label htmlFor="menu">
+          Menu
+        </label>
         <ul
-          id="menu"
-          className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
+          className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5 invisible peer-checked:visible sm-visible"
         >
           {menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
