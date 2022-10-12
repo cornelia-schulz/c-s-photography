@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Navbar from './navbar'
 import Footer from './footer'
 
 const name = 'Cornelia'
 export const siteTitle = 'Cornelia Schulz Photography'
 
-export default function Layout({ children, pageClass }) {
+export default function Layout({ children }) {
   return (
     <div className="flex flex-col h-screen justify-between px-5 mx-auto my-3 max-w-7xl">
       <Head>
@@ -23,10 +22,7 @@ export default function Layout({ children, pageClass }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header id="top" className="w-full flex flex-col fixed relative bg-white pin-t pin-r pin-l">
-        <Navbar page={pageClass} />
-      </header>
-      <main className="mb-4">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

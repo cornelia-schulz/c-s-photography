@@ -28,16 +28,18 @@ export default function Navbar({page}) {
   return (
     <nav
       id="site-menu"
-      className="w-full shadow sm:shadow-none"
+      className="w-full"
     >
       <div className="flex flex-col items-center">
         <Link href="/">
-          <Image
-            src="/images/CS_photgraphy_transparent-white.png"
-            alt="Cornelia Schulz Photography Logo"
-            width={250}
-            height={80}
-          />
+          <a>
+            <Image
+              src="/images/CS_photgraphy_transparent-white.png"
+              alt="Cornelia Schulz Photography Logo"
+              width={250}
+              height={80}
+            />
+          </a>
         </Link>
         <input type="checkbox" name="menu" id="menu" className="peer" sm-invisible/>
         <label htmlFor="menu">
@@ -46,14 +48,14 @@ export default function Navbar({page}) {
         <ul
           className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5 invisible peer-checked:visible sm-visible"
         >
-          {menuItems.map((menuItem, index) => (
+          {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
               <Link
                 href={menuItem.link}
                 aria-current="page"
               >
                 <a
-                  className={`text-white w-full no-underline sm:w-auto 2 hover:text-orange hover:underline ${page === "home" ? "text-orange" : ""}`}
+                  className={`text-white w-full no-underline sm:w-auto 2 hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : ""}`}
                 >
                   {menuItem.name}
                 </a>
@@ -63,5 +65,5 @@ export default function Navbar({page}) {
         </ul>
       </div>
     </nav>
-  );
+  )
 }

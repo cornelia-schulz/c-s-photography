@@ -1,9 +1,14 @@
-import Layout from "../components/layout"
+import Head from 'next/head'
+import Navbar from '../components/navbar'
+import Layout from '../components/layout'
 import Image from 'next/image'
 
 export default function About() {
   return (
     <div page="about">
+      <Head>
+        <title>About - Cornelia Schulz Photography</title>
+      </Head>
       <h1 className="text-2xl text-center mb-6">About Cornelia Schulz</h1>
       <main className="flex">
         <article className="flex-auto w-40 mr-4">
@@ -70,5 +75,14 @@ export default function About() {
         </aside>
       </main>
     </div>
-  );
+  )
+}
+
+About.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Navbar page="about" />
+      {page}
+    </Layout>
+  )
 }
