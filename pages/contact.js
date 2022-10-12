@@ -4,7 +4,10 @@ import Layout from '../components/layout'
 export default function Contact() {
     return (
     <div page="contact">
-        Contact me
+      <Head>
+        <title>Contact - Cornelia Schulz Photography</title>
+      </Head>
+      Contact me
     </div>
     )
 }

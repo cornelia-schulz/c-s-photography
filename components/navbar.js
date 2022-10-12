@@ -45,7 +45,7 @@ export default function Navbar({page}) {
           id="menu"
           className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
         >
-          {menuItems.map((menuItem, index) => (
+          {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
               <Link
                 href={menuItem.link}

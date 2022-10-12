@@ -6,7 +6,7 @@ import { search, mapImageResources } from '../lib/cloudinary'
 
 export async function getStaticProps() {
   const results = await search({
-    expression: 'folder=""'
+    expression: 'folder="Cornelia Schulz Photography"'
   })
   const { resources } = results
   const images = mapImageResources(resources)
