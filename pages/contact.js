@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 

@@ -26,7 +26,7 @@ export default function Photographs({ images }) {
     <h1 className="mb-4">Photographs</h1>
     <section className="grid gap-5 md:grid-cols-3">
       {images && images.map((image, index) => (
-        <div className="text-center">
+        <div key={index} className="text-center">
           <div className="relative border-solid border-8 border-grey-light-800 mb-4">
             <Link href="/gallery">
               <a>
