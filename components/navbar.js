@@ -8,12 +8,12 @@ export default function Navbar({page}) {
       link: '/'
     },
     {
-      name: 'About',
-      link: '/about'
-    },
-    {
       name: 'Photographs',
       link: '/gallery'
+    },
+    {
+      name: 'About',
+      link: '/about'
     },
     {
       name: 'Contact',
@@ -42,7 +42,7 @@ export default function Navbar({page}) {
           Menu
         </label>
         <ul
-          className="invisible peer-checked:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
+          className="invisible h-0 peer-checked:visible peer-checked:h-auto sm:h-auto sm:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
         >
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">

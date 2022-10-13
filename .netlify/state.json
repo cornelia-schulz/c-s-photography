@@ -1,0 +1,17 @@
+{
+	"siteId": "5227da27-c260-47f4-9e22-9f901f4cce5d",
+	"geolocation": {
+		"data": {
+			"city": "Christchurch",
+			"country": {
+				"code": "NZ",
+				"name": "New Zealand"
+			},
+			"subdivision": {
+				"code": "CAN",
+				"name": "Canterbury"
+			}
+		},
+		"timestamp": 1665633571271
+	}
+}
