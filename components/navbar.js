@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
 
 export default function Navbar({page}) {
   const menuItems = [
@@ -22,9 +21,6 @@ export default function Navbar({page}) {
     }
   ]
 
-  useEffect(() => {
-    console.log(page)
-  })
   return (
     <nav
       id="site-menu"
@@ -41,12 +37,12 @@ export default function Navbar({page}) {
             />
           </a>
         </Link>
-        <input type="checkbox" name="menu" id="menu" className="peer" sm-invisible/>
-        <label htmlFor="menu">
+        <input type="checkbox" name="menu" id="menu" className="peer sr-only"/>
+        <label htmlFor="menu" className="sm:hidden">
           Menu
         </label>
         <ul
-          className="w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5 invisible peer-checked:visible sm-visible"
+          className="invisible peer-checked:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
         >
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
