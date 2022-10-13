@@ -9,7 +9,11 @@ export async function getStaticProps() {
   const results = await search({
     expression: 'folder="Cornelia Schulz Photography/galleries"'
   })
-  const { resources } = results
+  const response = await fetch('/.netlify/functions/cloudinary')
+    .then(response => response.json()
+  )
+  console.log('netlify: ', response)
+  const { resources } = results || response
   const images = mapImageResources(resources)
   return {
     props: {
@@ -17,6 +21,8 @@ export async function getStaticProps() {
     },
   }
 }
+
+
 export default function Photographs({ images }) {
   return (
   <>
