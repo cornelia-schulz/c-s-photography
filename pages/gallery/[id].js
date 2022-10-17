@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
       return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
     })
   }
-  const id = capitalieeWords(idArray).toString().replaceAll(',', ' ')
+  const id = capitalieeWords(idArray).toString().replace(/,/g, ' ')
   const expression = 'folder="Cornelia Schulz Photography/galleries/'+ id +'"'
   const results = await search({
     expression: expression
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
       { params: { id: 'sydney' } },
       { params: { id: 'personal-favourites'}}
     ],
-    fallback: false, // can also be true or 'blocking'
+    fallback: false,
   }
 }
 

@@ -29,7 +29,7 @@ export default function Photographs({ images }) {
       {images && images.map((image, index) => (
         <div key={index} className="text-center">
           <div className="relative border-solid border-8 border-grey-light-800 mb-4">
-            <Link href={"/gallery/"+image.title.toLowerCase().replaceAll(' ', '-')}>
+            <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
               <a>
                 <Image 
                   src={image.image}
