@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
-import Navbar from '../components/navbar'
-import Layout from '../components/layout'
-import { search, mapImageResources } from '../lib/cloudinary'
+import Navbar from '../../components/navbar'
+import Layout from '../../components/layout'
+import { search, mapImageResources } from '../../lib/cloudinary'
 
 export async function getStaticProps() {
   const results = await search({
@@ -17,6 +17,7 @@ export async function getStaticProps() {
     },
   }
 }
+
 export default function Photographs({ images }) {
   return (
   <>
@@ -28,7 +29,7 @@ export default function Photographs({ images }) {
       {images && images.map((image, index) => (
         <div key={index} className="text-center">
           <div className="relative border-solid border-8 border-grey-light-800 mb-4">
-            <Link href="/gallery">
+            <Link href={"/gallery/"+image.title.toLowerCase().replaceAll(' ', '-')}>
               <a>
                 <Image 
                   src={image.image}
@@ -50,11 +51,14 @@ export default function Photographs({ images }) {
   )
 }
 
-  Photographs.getLayout = function getLayout(page) {
-    return (
-      <Layout>
-        <Navbar page="photographs" />
-        {page}
-      </Layout>
-    )
-  }
+Photographs.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Navbar page="photographs" />
+      {page}
+    </Layout>
+  )
+}
+
+ 
+
