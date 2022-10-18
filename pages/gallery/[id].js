@@ -32,15 +32,18 @@ export async function getStaticPaths() {
     paths: [
       { params: { id: 'new-zealand-south' } },
       { params: { id: 'sydney' } },
-      { params: { id: 'personal-favourites'}}
+      { params: { id: 'personal-favourites' }},
+      { params: { id: 'monochrome' }},
+      { params: { id: 'nightsky' }},
+      { params: { id: 'new-zealand-north' }},
+      { params: { id: 'australia' }}
     ],
     fallback: false,
   }
 }
 
 export default function Photograph({ images }) {
-  const router = useRouter()
-  const { pid } = router.query
+
   return (
   <>
     <Head>
@@ -57,7 +60,7 @@ export default function Photograph({ images }) {
                   src={image.image}
                   alt={image.title}
                   layout="responsive"
-                  width={450}
+                  width={image.landscape ? 450 : 180}
                   height={250}
                 />
               </a>
