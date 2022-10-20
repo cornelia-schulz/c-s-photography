@@ -10,8 +10,8 @@ export default function About() {
         <title>About - Cornelia Schulz Photography</title>
       </Head>
       <h1 className="text-2xl text-center mb-6">About Cornelia Schulz</h1>
-      <main className="flex flex-col sm:flex-row">
-        <article className="flex-auto sm:w-40 mr-4">
+      <main className="flex flex-col md:flex-row">
+        <article className="flex-auto md:w-40 mr-4">
           <p className="mb-3">
             Quite simply, I just love taking photos. Blending this with my
             fascination with the natural world provides me with heaps of
@@ -63,13 +63,13 @@ export default function About() {
             </a>
           </p>
         </article>
-        <aside>
-          <div className="border-8">
+        <aside className="grid place-content-center">
+          <div className="border-8 w-80 h-80">
             <Image
               src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
               alt="Galaxy"
-              width={300}
-              height={300}
+              width={320}
+              height={320}
             />
           </div>
         </aside>
