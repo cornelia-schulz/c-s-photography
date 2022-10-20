@@ -31,6 +31,8 @@ export default function Home({ images }) {
                 layout="responsive"
                 width={400}
                 height={250}
+                placeholder="blur"
+                blurDataURL="/images/blur.jpg"
               />
             </a>
           </Link>
@@ -50,6 +52,8 @@ export default function Home({ images }) {
                 layout="responsive"
                 width={400}
                 height={250}
+                placeholder="blur"
+                blurDataURL="/images/blur.jpg"
               />
             </a>
           </Link>
@@ -69,6 +73,8 @@ export default function Home({ images }) {
                 layout="responsive"
                 width={400}
                 height={250}
+                placeholder="blur"
+                blurDataURL="/images/blur.jpg"
               />
             </a>
           </Link>

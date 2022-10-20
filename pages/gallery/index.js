@@ -37,6 +37,8 @@ export default function Photographs({ images }) {
                   layout="responsive"
                   width={450}
                   height={250}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jpg"
                 />
               </a>
             </Link>

@@ -15,15 +15,15 @@ export default function Contact() {
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label htmlFor="yourname" className="mb-2 block">Your name:</label>
-          <input type="text" name="yourname" id="yourname" className="w-full mb-4" />
+          <input type="text" name="yourname" id="yourname" className="w-full mb-4 text-black px-3" />
         </p>
         <p>
           <label htmlFor="youremail" className="mb-2 block">Your email:</label>
-          <input type="email" name="email" id="youremail" className="w-full mb-4" />
+          <input type="email" name="email" id="youremail" className="w-full mb-4 text-black px-3" />
         </p>
         <p>
           <label htmlFor="yourmessage" className="mb-2 block">Your message:</label>
-          <textarea name="message" id="yourmessage" rows="6" className="w-full mb-4"></textarea>
+          <textarea name="message" id="yourmessage" rows="6" className="w-full mb-4 text-black px-3"></textarea>
         </p>
         <p className="flex justify-center">
           <button type="submit" className="bg-orange px-4 py-1 rounded text-black font-semibold">Send</button>

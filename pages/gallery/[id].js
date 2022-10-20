@@ -62,6 +62,8 @@ export default function Photograph({ images }) {
                   layout="responsive"
                   width={image.landscape ? 450 : 180}
                   height={250}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jpg"
                 />
               </a>
             </Link>
