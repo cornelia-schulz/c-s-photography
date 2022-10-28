@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -16,16 +17,18 @@ export default function Navbar({page}) {
       link: '/about'
     },
     {
+      name: 'Shop',
+      link: 'https://www.redbubble.com/people/firzhugh/shop?asc=u&ref=account-nav-dropdown'
+    },
+    {
       name: 'Contact',
       link: '/contact'
     }
   ]
+  const [menuShow, setMenuShow] = useState(false)
 
   return (
-    <nav
-      id="site-menu"
-      className="w-full"
-    >
+    <nav className="w-full">
       <div className="flex flex-col items-center">
         <Link href="/">
           <a>
@@ -37,12 +40,15 @@ export default function Navbar({page}) {
             />
           </a>
         </Link>
-        <input type="checkbox" name="menu" id="menu" className="peer sr-only"/>
+        {/* <input type="checkbox" name="menu" id="menu" className="peer sr-only"/>
         <label htmlFor="menu" className="sm:hidden">
           Menu
-        </label>
+        </label> */}
+        <button onClick={() => {
+            setMenuShow(!menuShow)
+          }}>Menu</button>
         <ul
-          className="invisible h-0 peer-checked:visible peer-checked:h-auto sm:h-auto sm:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"
+          className='(menuShow ? "" : "hidden ") + "mr-8 mt-2 peer-checked:h-auto sm:h-auto sm:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"'
         >
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
@@ -51,7 +57,9 @@ export default function Navbar({page}) {
                 aria-current="page"
               >
                 <a
-                  className={`text-white w-full no-underline sm:w-auto 2 hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : ""}`}
+                  className={`text-white w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : ""}`}
+                  target={menuItem.name === "Shop"? "_blank" : ""}
+                  rel="noreferrer"
                 >
                   {menuItem.name}
                 </a>
