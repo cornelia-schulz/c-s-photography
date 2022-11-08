@@ -40,15 +40,13 @@ export default function Navbar({page}) {
             />
           </a>
         </Link>
-        {/* <input type="checkbox" name="menu" id="menu" className="peer sr-only"/>
-        <label htmlFor="menu" className="sm:hidden">
-          Menu
-        </label> */}
-        <button onClick={() => {
+        <button
+         className="sm:hidden text-center"
+         onClick={() => {
             setMenuShow(!menuShow)
           }}>Menu</button>
         <ul
-          className='(menuShow ? "" : "hidden ") + "mr-8 mt-2 peer-checked:h-auto sm:h-auto sm:visible w-full sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center h-full pb-5"'
+          className={`${menuShow ? "h-auto" : "invisible h-0"} sm:mr-8 mt-2 peer-checked:h-auto sm:h-auto w-full sm:visible sm:w-auto sm:flex flex-col sm:flex-row items-center justify-center pb-5`}
         >
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
