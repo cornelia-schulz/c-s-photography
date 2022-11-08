@@ -8,7 +8,7 @@ export default function Contact() {
       <Head>
         <title>Contact - Cornelia Schulz Photography</title>
       </Head>
-      <h1 className="text-center mb-4">Contact Me</h1>
+      <h1 className="text-2xl text-center mb-6 mt-6">Contact Me</h1>
       <p className="text-center">Please contact me with any questions or comments via the form below.</p>
       <p className="text-center mb-4">Thank you.</p>
       <form name="contact" action="/success" method="POST" data-netlify="true">
