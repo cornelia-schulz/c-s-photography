@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 
-module.exports = ({
+export default function Modal ({
   title = '',
   content = '',
   images = [],
@@ -12,7 +12,7 @@ module.exports = ({
   onDiscard = '',
   onConfirm = '',
   children
-}) => {
+}) {
     let [isOpen, setIsOpen] = useState(false)
     let [currentImage, setCurrentImage] = useState(images[image])
 
@@ -66,6 +66,7 @@ module.exports = ({
                 </div>
               </div>
               <Image 
+                alt={currentImage.title}
                 src={currentImage.image}
                 layout="responsive"
                 width={currentImage.landscape ? 450 : 180}
