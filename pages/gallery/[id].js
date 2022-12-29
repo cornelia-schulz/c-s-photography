@@ -62,8 +62,8 @@ export default function Photograph({ images }) {
               onConfirm={() => console.log('Button confirm')}
               onDiscard={() => console.log('Button discard')}
               buttons={[
-                { role: "custom", onClick: () => console.log("custom test"), toClose: true, classes: "bg-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-500/30 transition-all duration-200", label: "Buy print" },
-                { role: "discard", toClose: true, classes: "bg-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-500/30 transition-all duration-200", label: "Close" }
+                { role: "custom", onClick: () => console.log("custom test"), toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Buy print" },
+                { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
               ]}
             >
               <Image 
@@ -77,7 +77,7 @@ export default function Photograph({ images }) {
               />
             </Modal>
           </div>
-          <p className>{image.title}</p>
+          <p>{image.title}</p>
         </div>
       ))}
     </section>
