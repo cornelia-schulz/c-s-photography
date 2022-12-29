@@ -21,11 +21,10 @@ export default function Home({ images }) {
   return (
     <>
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
-        <div className="relative border-solid border-8 border-grey-light-800">
+        <div className="relative border-solid border-8">
           <Link href="/gallery">
             <a>
               <Image
-                className="photograph"
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
                 alt="Galaxy"
                 layout="responsive"
@@ -42,11 +41,10 @@ export default function Home({ images }) {
             </Link>
           </div>
         </div>
-        <div className="relative border-solid border-8 border-grey-light-800">
+        <div className="relative border-solid border-8">
           <Link href="/about">
             <a>
               <Image
-                className="photograph"
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
                 alt="Galaxy"
                 layout="responsive"
@@ -67,7 +65,6 @@ export default function Home({ images }) {
           <Link href="/contact">
             <a>
               <Image
-                className="photograph"
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
                 alt="Galaxy"
                 layout="responsive"
@@ -88,7 +85,6 @@ export default function Home({ images }) {
           <Link href="/contact">
             <a>
               <Image
-                className="photograph"
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
                 alt="Galaxy"
                 layout="responsive"

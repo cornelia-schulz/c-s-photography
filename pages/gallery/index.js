@@ -44,7 +44,7 @@ export default function Photographs({ images }) {
             </Link>
           </div>
           <Link href="/gallery">
-            <a className>{image.title}</a>
+            <a>{image.title}</a>
           </Link>
         </div>
       ))}
