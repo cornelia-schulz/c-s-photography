@@ -5,7 +5,6 @@ exports.handler = async (event, context) => {
   if (Object) {
     paramString = Object.keys(params).map((key) => `${key}=${encodeURIComponent(params[key])}`).join("&");
   }
-  console.log("parameters: ", paramString);
   try {
     const results = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/search?${paramString}`, {
       headers: {

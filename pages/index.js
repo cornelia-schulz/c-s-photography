@@ -25,7 +25,7 @@ export default function Home({ images }) {
           <Link href="/gallery">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Galaxy"
                 layout="responsive"
                 width={400}
@@ -45,7 +45,7 @@ export default function Home({ images }) {
           <Link href="/about">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Galaxy"
                 layout="responsive"
                 width={400}
@@ -65,7 +65,7 @@ export default function Home({ images }) {
           <Link href="/contact">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Galaxy"
                 layout="responsive"
                 width={400}
@@ -85,7 +85,7 @@ export default function Home({ images }) {
           <Link href="/contact">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Galaxy"
                 layout="responsive"
                 width={400}
