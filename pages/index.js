@@ -26,7 +26,7 @@ export default function Home({ images }) {
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
-                alt="Galaxy"
+                alt="Link to gallery"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -46,7 +46,7 @@ export default function Home({ images }) {
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
-                alt="Galaxy"
+                alt="Link to About me page"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -66,7 +66,7 @@ export default function Home({ images }) {
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
-                alt="Galaxy"
+                alt="Link to Contact me page"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -86,7 +86,7 @@ export default function Home({ images }) {
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
-                alt="Galaxy"
+                alt="Link to my shop on Redbubble"
                 layout="responsive"
                 width={400}
                 height={250}

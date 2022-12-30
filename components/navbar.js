@@ -55,7 +55,7 @@ export default function Navbar({page}) {
                 aria-current="page"
               >
                 <a
-                  className={`text-white w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : ""}`}
+                  className={`w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
                   target={menuItem.name === "Shop"? "_blank" : ""}
                   rel="noreferrer"
                 >

@@ -2,7 +2,21 @@ import { Fragment, useEffect, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 
+export async function getStaticProps() {
+  const results = await search({
+    expression: 'folder="Cornelia Schulz Photography"'
+  })
+  const { resources } = results
+  const images = mapImageResources(resources)
+  return {
+    props: {
+      images
+    },
+  }
+}
+
 export default function Modal ({
+  expression = '',
   title = '',
   content = '',
   images = [],
@@ -63,7 +77,7 @@ export default function Modal ({
           leaveTo="opacity-0"
           leaveFrom="opacity-100"
         >
-          <div style={{ zIndex: '1' }} onClick={() => handleChange()} className="w-full h-full left-0 top-0 bg-black absolute" />
+          <div style={{ zIndex: '1' }} onClick={() => handleChange()} className="w-full h-full left-0 top-0 bg-opacity-80 bg-black absolute" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -74,7 +88,7 @@ export default function Modal ({
           leaveTo="opacity-0 scale-75"
           leaveFrom="opacity-100 scale-100"
         >
-          <div style={{ zIndex: '2' }} className="flex justify-center items-center h-screen absolute left-0 top-0">
+          <div style={{ zIndex: '2' }} className="flex justify-center items-center h-screen bg-opacity-80 bg-black absolute left-0 top-0" onClick={() => handleChange()}>
             <div className={`w-full ${classes ? classes : 'p-4 bg-white rounded-lg relative'}`}>
               <div className="w-full flex justify-between items-center mb-6">
                 <h3 className="font-medium text-lg text-black">{title}</h3>
