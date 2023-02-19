@@ -17,8 +17,8 @@ export default function Navbar({page}) {
       link: '/about'
     },
     {
-      name: 'Shop',
-      link: 'https://www.redbubble.com/people/firzhugh/shop?asc=u&ref=account-nav-dropdown'
+      name: 'Prints',
+      link: '/prints'
     },
     {
       name: 'Contact',
