@@ -28,12 +28,13 @@ export default function Photographs({ images }) {
     <section className="grid gap-5 md:grid-cols-3">
       {images && images.map((image, index) => (
         <div key={index} className="text-center">
-          <div className="relative border-solid border-8 border-grey-light-800 mb-4">
+          <div className="relative mb-4">
             <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
               <a>
                 <Image 
                   src={image.image}
                   alt={image.title}
+                  className="main-image"
                   layout="responsive"
                   width={450}
                   height={250}

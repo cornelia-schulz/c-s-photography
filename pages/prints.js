@@ -4,20 +4,20 @@ import Layout from '../components/layout'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function About() {
+export default function Prints() {
   return (
-    <div page="about">
+    <div page="prints">
       <Head>
         <title>Prints - Cornelia Schulz Photography</title>
       </Head>
       <h1 className="text-2xl text-center mb-6 mt-6">Prints</h1>
       <div className="grid place-content-center mb-8">
         <Image
-          className="border-8 border-white-500"
           src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676770737/Cornelia%20Schulz%20Photography/living-room-wall.jpg"
           alt="Galaxy"
-          width={1020}
-          height={600}
+          className="main-image"
+          width={980}
+          height={550}
         />
       </div>
       <main className="flex flex-col md:flex-row">
@@ -41,9 +41,10 @@ export default function About() {
           <div>
             <Image
               src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676773098/Cornelia%20Schulz%20Photography/desk.jpg"
-              alt="Galaxy"
-              width={600}
-              height={370}
+              alt="Tekapo print on a desk"
+              className="main-image"
+              width={500}
+              height={265}
             />
           </div>
         </aside>
@@ -52,10 +53,10 @@ export default function About() {
   )
 }
 
-About.getLayout = function getLayout(page) {
+Prints.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Navbar page="about" />
+      <Navbar page="prints" />
       {page}
     </Layout>
   )

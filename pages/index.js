@@ -21,12 +21,13 @@ export default function Home({ images }) {
   return (
     <>
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
-        <div className="relative border-solid border-8">
+        <div className="relative">
           <Link href="/gallery">
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Link to gallery"
+                className="main-image"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -41,12 +42,13 @@ export default function Home({ images }) {
             </Link>
           </div>
         </div>
-        <div className="relative border-solid border-8">
+        <div className="relative">
           <Link href="/about">
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Link to About me page"
+                className="main-image"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -61,12 +63,13 @@ export default function Home({ images }) {
             </Link>
           </div>
         </div>
-        <div className="relative border-solid border-8 border-grey-light-800">
+        <div className="relative">
           <Link href="/contact">
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Link to Contact me page"
+                className="main-image"
                 layout="responsive"
                 width={400}
                 height={250}
@@ -81,12 +84,13 @@ export default function Home({ images }) {
             </Link>
           </div>
         </div>
-        <div className="relative border-solid border-8 border-grey-light-800">
+        <div className="relative">
           <Link href="/contact">
             <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
                 alt="Link to my shop on Redbubble"
+                className="main-image"
                 layout="responsive"
                 width={400}
                 height={250}

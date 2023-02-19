@@ -64,10 +64,11 @@ export default function About() {
           </p>
         </article>
         <aside className="grid place-content-center">
-          <div className="border-8 w-80 h-80">
+          <div className="w-80 h-80">
             <Image
               src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
               alt="Galaxy"
+              className="main-image"
               width={320}
               height={320}
             />

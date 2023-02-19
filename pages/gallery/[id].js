@@ -67,10 +67,11 @@ export default function Photograph({ images, expression }) {
               { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
             ]}
           >
-            <div className="border-solid border-8 border-grey-light-800 mb-4">
+            <div className="mb-4">
               <Image 
                 src={image.image}
                 alt={image.title}
+                className="main-image"
                 layout="responsive"
                 width={image.landscape ? 450 : 180}
                 height={250}

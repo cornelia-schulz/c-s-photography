@@ -84,12 +84,12 @@ export default function Contact() {
         <title>Contact - Cornelia Schulz Photography</title>
       </Head>
       <h1 className="text-2xl text-center mb-6 mt-6">Contact Me</h1>
-      <p className="text-center">Please contact me with any questions or comments via the form below.</p>
+      <p className="text-center">Please feel free to get in touch with any questions or comments via the form below.</p>
       <p className="text-center mb-4">Thank you.</p>
       <div className="text-orange">
         {error}
       </div>
-      <form name="contact" action="/success" method="POST" data-netlify="true">
+      <form className="max-w-2xl mx-auto" name="contact" action="/success" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label htmlFor="yourname" className="mb-2 block">Your name*:</label>

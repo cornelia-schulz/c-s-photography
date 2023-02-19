@@ -25,3 +25,10 @@ body {
   font-family: 'proxima-nova';
   src: url('/fonts/Proxima-Nova-Font.otf');
 }
+
+@layer base {
+  .main-image {
+    border: 8px solid #d9d9d9 !important;
+  }  
+}
+
