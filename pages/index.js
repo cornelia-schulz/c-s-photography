@@ -23,13 +23,12 @@ export default function Home({ images }) {
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
         <div className="relative">
           <Link href="/gallery">
-            <div className="relative w-full">
+            <div className="relative overflow-hidden h-96">
               <Image
                   src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/castle-hill.jpg"
                   alt="Link to gallery"
-                  className="main-image w-full"
-                  width={400}
-                  height={250}
+                  className="main-image object-cover"
+                  fill
                   placeholder="blur"
                   blurDataURL="/images/blur.jpg"
                 />
@@ -43,15 +42,16 @@ export default function Home({ images }) {
         </div>
         <div className="relative">
           <Link href="/about">
+          <div className="relative overflow-hidden h-96">
             <Image
               src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/riwaka.jpg"
               alt="Link to About me page"
-              className="main-image w-full"
-              width={400}
-              height={250}
+              className="main-image object-cover"
+              fill
               placeholder="blur"
               blurDataURL="/images/blur.jpg"
             />
+            </div>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link className="hover:text-orange" href="/about">
@@ -61,15 +61,16 @@ export default function Home({ images }) {
         </div>
         <div className="relative">
           <Link href="/contact">
+          <div className="relative overflow-hidden h-96">
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/mountain-view.jpg"
                 alt="Link to Contact me page"
-                className="main-image w-full"
-                width={400}
-                height={250}
+                className="main-image object-cover"
+                fill
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
+              </div>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link className="hover:text-orange" href="/contact">
@@ -79,15 +80,16 @@ export default function Home({ images }) {
         </div>
         <div className="relative">
           <Link href="/prints">
+          <div className="relative overflow-hidden h-96">
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676770737/Cornelia%20Schulz%20Photography/living-room-wall.jpg"
                 alt="Link to my page that contains more info about where to order prints."
-                className="main-image w-full"
-                width={400}
-                height={250}
+                className="main-image object-cover"
+                fill
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
+              </div>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
             <Link className="hover:text-orange" href="/prints">

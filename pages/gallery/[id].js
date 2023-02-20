@@ -44,6 +44,9 @@ export async function getStaticPaths() {
 
 export default function Photograph({ images, expression }) {
   const router = useRouter()
+
+  const sortedImages = images.sort((a, b) => (a.landscape > b.landscape) ? -1 : 1)
+
   return (
   <>
     <Head>
@@ -51,7 +54,7 @@ export default function Photograph({ images, expression }) {
     </Head>
     <h1 className="mb-4">Photographs</h1>
     <section className="grid gap-5 md:grid-cols-3">
-      {images && images.map((image, index) => (
+      {sortedImages && sortedImages.map((image, index) => (
         <div key={index} className="text-center">
           <Modal
             expression={expression}
@@ -66,13 +69,12 @@ export default function Photograph({ images, expression }) {
               { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
             ]}
           >
-            <div className="mb-4">
+            <div className={`relative mb-4 overflow-hidden ${image.landscape ? "h-56" : "h-96"}`}>
               <Image 
                 src={image.image}
                 alt={image.title}
-                className="main-image w-full"
-                width={image.landscape ? 450 : 180}
-                height={250}
+                className="main-image object-cover object-bottom"
+                fill
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />

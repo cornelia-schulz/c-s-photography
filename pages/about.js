@@ -66,8 +66,8 @@ export default function About() {
         <aside className="grid place-content-center">
           <div className="w-80 h-80">
             <Image
-              src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/51365510750_14a78ee09c_k_ue2pqq.jpg"
-              alt="Galaxy"
+              src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676927528/Cornelia%20Schulz%20Photography/CS.jpg"
+              alt="Cornelia Schulz standing on a cliff smiling. There is an ocean view in the background."
               className="main-image"
               width={320}
               height={320}
