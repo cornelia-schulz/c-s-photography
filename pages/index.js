@@ -25,7 +25,7 @@ export default function Home({ images }) {
           <Link href="/gallery">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/castle-hill.jpg"
                 alt="Link to gallery"
                 className="main-image"
                 layout="responsive"
@@ -46,7 +46,7 @@ export default function Home({ images }) {
           <Link href="/about">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/riwaka.jpg"
                 alt="Link to About me page"
                 className="main-image"
                 layout="responsive"
@@ -67,7 +67,7 @@ export default function Home({ images }) {
           <Link href="/contact">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/mountain-view.jpg"
                 alt="Link to Contact me page"
                 className="main-image"
                 layout="responsive"
@@ -85,11 +85,11 @@ export default function Home({ images }) {
           </div>
         </div>
         <div className="relative">
-          <Link href="/contact">
+          <Link href="/prints">
             <a>
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1654638588/Cornelia%20Schulz%20Photography/Forest%20Walk.jpg"
-                alt="Link to my shop on Redbubble"
+                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676770737/Cornelia%20Schulz%20Photography/living-room-wall.jpg"
+                alt="Link to my page that contains more info about where to order prints."
                 className="main-image"
                 layout="responsive"
                 width={400}
@@ -100,8 +100,8 @@ export default function Home({ images }) {
             </a>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
-            <Link href="https://www.redbubble.com/people/firzhugh/shop?asc=u&ref=account-nav-dropdown">
-              <a className="hover:text-orange" target="_blank" rel="noreferrer">Shop</a>
+            <Link href="/prints">
+              <a className="hover:text-orange">Prints</a>
             </Link>
           </div>
         </div>

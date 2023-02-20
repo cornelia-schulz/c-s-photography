@@ -103,12 +103,19 @@ export default function Modal ({
                 <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
                 <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
               </div>
-              <Image 
+              {/* <Image 
                 alt={currentImage.title}
                 src={currentImage.image}
                 layout="responsive"
                 width={currentImage.landscape ? 450 : 180}
                 height={250}
+                placeholder="blur"
+                blurDataURL="/images/blur.jpg"
+              /> */}
+              <img 
+                src={currentImage.image}
+                alt={currentImage.title}
+                className={`${currentImage.landscape ? 'max-w-full h-auto' : 'w-auto h-screen mx-auto'}`}
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />

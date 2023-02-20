@@ -68,13 +68,20 @@ export default function Photograph({ images, expression }) {
             ]}
           >
             <div className="mb-4">
-              <Image 
+              {/* <Image 
                 src={image.image}
                 alt={image.title}
                 className="main-image"
                 layout="responsive"
                 width={image.landscape ? 450 : 180}
                 height={250}
+                placeholder="blur"
+                blurDataURL="/images/blur.jpg"
+              /> */}
+              <img 
+                src={image.image}
+                alt={image.title}
+                className="main-image max-w-full h-auto"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />

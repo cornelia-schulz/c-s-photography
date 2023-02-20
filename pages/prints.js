@@ -26,7 +26,7 @@ export default function Prints() {
           <p className="mb-3">
             You can order most of my images directly at Red Bubble:
             <Link href="https://www.redbubble.com/people/firzhugh/shop?asc=u&ref=account-nav-dropdown">
-              <a className="text-orange hover:underline pl-1 pr-1">
+              <a className="text-orange hover:underline pl-1 pr-1" target="_blank" rel="noreferrer">
                 Shop
               </a>
             </Link>
