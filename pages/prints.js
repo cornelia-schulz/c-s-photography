@@ -32,7 +32,7 @@ export default function Prints() {
             </Link>
           </p>
           <p className="mb-3">The images are available in different shapes and sizes and can be shipped to almost anywhere.</p>
-          <p className="mb-3">If you can't see the image you're looking for, please get in touch via the 
+          <p className="mb-3">If you can&apos;t see the image you&apos;re looking for, please get in touch via the 
             <Link href="/contact"><a className="text-orange hover:underline pl-1 pr-1">Contact</a></Link>
             form and I will upload it for you.</p>
           
