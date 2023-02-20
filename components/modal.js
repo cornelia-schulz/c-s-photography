@@ -88,7 +88,7 @@ export default function Modal ({
           leaveTo="opacity-0 scale-75"
           leaveFrom="opacity-100 scale-100"
         >
-          <div style={{ zIndex: '2' }} className="flex justify-center items-center h-screen bg-opacity-80 bg-black absolute left-0 top-0">
+          <div style={{ zIndex: '2' }} className="flex justify-center items-center w-screen h-screen bg-opacity-80 bg-black absolute left-0 top-0">
             <div className={`w-full ${classes ? classes : 'p-4 bg-white rounded-lg relative'}`}>
               <div className="w-full flex justify-between items-center mb-6">
                 <h3 className="font-medium text-lg text-black">{title}</h3>
@@ -106,20 +106,12 @@ export default function Modal ({
               <Image 
                 alt={currentImage.title}
                 src={currentImage.image}
-                width="0"
-                height="0"
-                className={`${currentImage.landscape ? 'max-w-full h-auto' : 'w-auto h-screen mx-auto'}`}
+                width={1080}
+                height={100}
+                className={`${currentImage.landscape ? 'max-w-full h-auto mx-auto' : 'w-auto h-screen mx-auto'}`}
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
-                sizes={`${currentImage.landscape ? "100vw" : "100vh"}`}
               />
-              {/* <img 
-                src={currentImage.image}
-                alt={currentImage.title}
-                className={`${currentImage.landscape ? 'max-w-full h-auto' : 'w-auto h-screen mx-auto'}`}
-                placeholder="blur"
-                blurDataURL="/images/blur.jpg"
-              /> */}
               <p className="text-md mt-4 text-black">{content}</p>
               <div className="mt-6 flex justify-end items-center gap-2">
                 {buttons.map((button, index) => (

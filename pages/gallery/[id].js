@@ -3,6 +3,8 @@ import Navbar from '../../components/navbar'
 import Layout from '../../components/layout'
 import Modal from '../../components/modal'
 import { search, mapImageResources } from '../../lib/cloudinary'
+import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 export async function getStaticProps(context) {
   const idArray = context.params?.id.split('-')
@@ -29,9 +31,8 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { id: 'new-zealand-south' } },
-      { params: { id: 'sydney' } },
       { params: { id: 'personal-favourites' }},
+      { params: { id: 'new-zealand-south' } },
       { params: { id: 'monochrome' }},
       { params: { id: 'nightsky' }},
       { params: { id: 'new-zealand-north' }},
@@ -42,7 +43,7 @@ export async function getStaticPaths() {
 }
 
 export default function Photograph({ images, expression }) {
-
+  const router = useRouter()
   return (
   <>
     <Head>
@@ -57,29 +58,21 @@ export default function Photograph({ images, expression }) {
             title={image.title}
             images={images}
             image={index}
-            content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+            content={""}
             onConfirm={() => console.log('Button confirm')}
             onDiscard={() => console.log('Button discard')}
             buttons={[
-              { role: "custom", onClick: () => console.log("custom test"), toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Buy print" },
+              { role: "custom", onClick: () => router.push('/prints'), toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Buy print" },
               { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
             ]}
           >
             <div className="mb-4">
-              {/* <Image 
+              <Image 
                 src={image.image}
                 alt={image.title}
-                className="main-image"
-                layout="responsive"
+                className="main-image w-full"
                 width={image.landscape ? 450 : 180}
                 height={250}
-                placeholder="blur"
-                blurDataURL="/images/blur.jpg"
-              /> */}
-              <img 
-                src={image.image}
-                alt={image.title}
-                className="main-image max-w-full h-auto"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />

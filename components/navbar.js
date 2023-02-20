@@ -37,6 +37,7 @@ export default function Navbar({page}) {
             className="w-auto"
             width={190}
             height={80}
+            priority
           />
         </Link>
         <button
