@@ -31,14 +31,13 @@ export default function Navbar({page}) {
     <nav className="w-full">
       <div className="flex flex-col items-center">
         <Link href="/">
-          <a>
-            <Image
-              src="/images/CS_photgraphy_transparent-white.png"
-              alt="Cornelia Schulz Photography Logo"
-              width={250}
-              height={80}
-            />
-          </a>
+          <Image
+            src="/images/CS_photgraphy_transparent-white.png"
+            alt="Cornelia Schulz Photography Logo"
+            className="w-auto"
+            width={190}
+            height={80}
+          />
         </Link>
         <button
          className="sm:hidden text-center"
@@ -51,16 +50,11 @@ export default function Navbar({page}) {
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
               <Link
+                className={`w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
                 href={menuItem.link}
                 aria-current="page"
               >
-                <a
-                  className={`w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
-                  target={menuItem.name === "Shop"? "_blank" : ""}
-                  rel="noreferrer"
-                >
-                  {menuItem.name}
-                </a>
+                {menuItem.name}
               </Link>
             </li>
           ))}

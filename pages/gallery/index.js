@@ -30,22 +30,21 @@ export default function Photographs({ images }) {
         <div key={index} className="text-center">
           <div className="relative mb-4">
             <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
-              <a>
+              <div className="relative h-full overflow-hidden">
                 <Image 
                   src={image.image}
                   alt={image.title}
-                  className="main-image"
-                  layout="responsive"
+                  className="main-image w-full object-cover"
                   width={450}
                   height={250}
                   placeholder="blur"
                   blurDataURL="/images/blur.jpg"
                 />
-              </a>
+              </div>
             </Link>
           </div>
           <Link href="/gallery">
-            <a>{image.title}</a>
+            {image.title}
           </Link>
         </div>
       ))}

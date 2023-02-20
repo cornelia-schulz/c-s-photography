@@ -23,85 +23,75 @@ export default function Home({ images }) {
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
         <div className="relative">
           <Link href="/gallery">
-            <a>
+            <div className="relative w-full">
               <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/castle-hill.jpg"
-                alt="Link to gallery"
-                className="main-image"
-                layout="responsive"
-                width={400}
-                height={250}
-                placeholder="blur"
-                blurDataURL="/images/blur.jpg"
-              />
-            </a>
+                  src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/castle-hill.jpg"
+                  alt="Link to gallery"
+                  className="main-image w-full"
+                  width={400}
+                  height={250}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jpg"
+                />
+            </div>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
-            <Link href="/gallery">
-              <a className="hover:text-orange">Photographs</a>
+            <Link className="hover:text-orange" href="/gallery">
+              Photographs
             </Link>
           </div>
         </div>
         <div className="relative">
           <Link href="/about">
-            <a>
-              <Image
-                src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/riwaka.jpg"
-                alt="Link to About me page"
-                className="main-image"
-                layout="responsive"
-                width={400}
-                height={250}
-                placeholder="blur"
-                blurDataURL="/images/blur.jpg"
-              />
-            </a>
+            <Image
+              src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/riwaka.jpg"
+              alt="Link to About me page"
+              className="main-image w-full"
+              width={400}
+              height={250}
+              placeholder="blur"
+              blurDataURL="/images/blur.jpg"
+            />
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
-            <Link href="/about">
-              <a className="hover:text-orange">About</a>
+            <Link className="hover:text-orange" href="/about">
+              About
             </Link>
           </div>
         </div>
         <div className="relative">
           <Link href="/contact">
-            <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676858529/Cornelia%20Schulz%20Photography/mountain-view.jpg"
                 alt="Link to Contact me page"
-                className="main-image"
-                layout="responsive"
+                className="main-image w-full"
                 width={400}
                 height={250}
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
-            </a>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
-            <Link href="/contact">
-              <a className="hover:text-orange">Contact</a>
+            <Link className="hover:text-orange" href="/contact">
+              Contact
             </Link>
           </div>
         </div>
         <div className="relative">
           <Link href="/prints">
-            <a>
               <Image
                 src="https://res.cloudinary.com/cornelia-schulz-photography/image/upload/v1676770737/Cornelia%20Schulz%20Photography/living-room-wall.jpg"
                 alt="Link to my page that contains more info about where to order prints."
-                className="main-image"
-                layout="responsive"
+                className="main-image w-full"
                 width={400}
                 height={250}
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
-            </a>
           </Link>
           <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
-            <Link href="/prints">
-              <a className="hover:text-orange">Prints</a>
+            <Link className="hover:text-orange" href="/prints">
+              Prints
             </Link>
           </div>
         </div>
