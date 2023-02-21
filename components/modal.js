@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
 import { Transition } from '@headlessui/react'
-import Image from 'next/image'
 
 export async function getStaticProps() {
   const results = await search({
@@ -103,6 +102,7 @@ export default function Modal ({
                 <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
                 <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
               </div>
+              {/*} using img tag rather than Image because of sizing issues */}
                 <img 
                   src={currentImage.image}
                   alt={currentImage.title}
