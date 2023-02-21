@@ -36,6 +36,7 @@ export default function Photographs({ images }) {
                   alt={image.title}
                   className="main-image object-cover"
                   fill
+                  sizes="33vw"
                   placeholder="blur"
                   blurDataURL="/images/blur.jpg"
                 />

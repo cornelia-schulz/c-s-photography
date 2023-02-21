@@ -69,12 +69,13 @@ export default function Photograph({ images, expression }) {
               { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
             ]}
           >
-            <div className={`relative mb-4 overflow-hidden ${image.landscape ? "h-56" : "h-96"}`}>
+            <div className="relative mb-4 overflow-hidden h-96">
               <Image 
                 src={image.image}
                 alt={image.title}
                 className="main-image object-cover object-bottom"
                 fill
+                sizes="33vw"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />

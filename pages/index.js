@@ -29,6 +29,7 @@ export default function Home({ images }) {
                   alt="Link to gallery"
                   className="main-image object-cover"
                   fill
+                  sizes="50vw"
                   placeholder="blur"
                   blurDataURL="/images/blur.jpg"
                 />
@@ -48,6 +49,7 @@ export default function Home({ images }) {
               alt="Link to About me page"
               className="main-image object-cover"
               fill
+              sizes="50vw"
               placeholder="blur"
               blurDataURL="/images/blur.jpg"
             />
@@ -67,6 +69,7 @@ export default function Home({ images }) {
                 alt="Link to Contact me page"
                 className="main-image object-cover"
                 fill
+                sizes="50vw"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
@@ -86,6 +89,7 @@ export default function Home({ images }) {
                 alt="Link to my page that contains more info about where to order prints."
                 className="main-image object-cover"
                 fill
+                sizes="50vw"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
