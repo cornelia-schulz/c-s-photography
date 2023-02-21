@@ -89,7 +89,7 @@ export default function Modal ({
           leaveFrom="opacity-100 scale-100"
         >
           <div style={{ zIndex: '2' }} className="flex justify-center items-center w-screen h-screen bg-opacity-80 bg-black absolute left-0 top-0">
-            <div className={`w-full ${classes ? classes : 'p-4 bg-white rounded-lg relative'}`}>
+            <div className={`${classes ? classes : 'p-4 bg-white rounded-lg relative'}`}>
               <div className="w-full flex justify-between items-center mb-6">
                 <h3 className="font-medium text-lg text-black">{title}</h3>
                 <div onClick={() => handleChange()} className="w-8 h-8 flex justify-center items-center rounded-lg transition-all duration-200 cursor-pointer hover:bg-dark-orange">
@@ -103,15 +103,13 @@ export default function Modal ({
                 <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
                 <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
               </div>
-              <Image 
-                alt={currentImage.title}
-                src={currentImage.image}
-                width={1080}
-                height={100}
-                className={`${currentImage.landscape ? 'max-w-full h-auto mx-auto' : 'w-auto h-screen mx-auto'}`}
-                placeholder="blur"
-                blurDataURL="/images/blur.jpg"
-              />
+                <img 
+                  src={currentImage.image}
+                  alt={currentImage.title}
+                  className={`${currentImage.landscape ? 'max-w-full h-auto max-h-[80vh] mx-auto' : 'w-auto h-[80vh] mx-auto'}`}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jpg"
+                />
               <p className="text-md mt-4 text-black">{content}</p>
               <div className="mt-6 flex justify-end items-center gap-2">
                 {buttons.map((button, index) => (

@@ -23,6 +23,6 @@ module.exports = {
       fontFamily: {
         sans: ['sans-serif'],
         serif: ['proxima-nova', 'serif'],
-      },
+      }
     }
 };
