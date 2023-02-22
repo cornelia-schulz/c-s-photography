@@ -52,7 +52,7 @@ export default function Navbar({page}) {
           {menuItems && menuItems.map((menuItem, index) => (
             <li key={index} className="py-2 sm-py-5 px-3 text-center">
               <Link
-                className={`w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
+                className={`w-full no-underline sm:w-auto sm:text-lg hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
                 href={menuItem.link}
                 aria-current="page"
                 onClick={() => {

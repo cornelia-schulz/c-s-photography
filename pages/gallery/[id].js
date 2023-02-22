@@ -70,7 +70,9 @@ export default function Photograph({ images, expression }) {
                 alt={image.title}
                 className="main-image object-cover object-bottom"
                 fill
-                sizes="33vw"
+                sizes="(max-width: 768px) 100vw,
+                       (max-width: 1200px) 50vw)
+                       33vw"
                 placeholder="blur"
                 blurDataURL="/images/blur.jpg"
               />
