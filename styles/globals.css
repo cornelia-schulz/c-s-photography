@@ -21,9 +21,13 @@ body {
   position: relative;
 }
 
+h1, h2, h3 {
+  font-family: 'cinzel-decorative';
+}
+
 @font-face {
-  font-family: 'proxima-nova';
-  src: url('/fonts/Proxima-Nova-Font.otf');
+  font-family: 'cinzel-decorative';
+  src: url('/fonts/CinzelDecorative-Regular.ttf');
 }
 
 @layer base {
