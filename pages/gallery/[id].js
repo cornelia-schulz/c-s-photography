@@ -62,12 +62,7 @@ export default function Photograph({ images, expression }) {
             images={images}
             image={index}
             content={""}
-            onConfirm={() => console.log('Button confirm')}
-            onDiscard={() => console.log('Button discard')}
-            buttons={[
-              { role: "custom", onClick: () => router.push('/prints'), toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Buy print" },
-              { role: "discard", toClose: true, classes: "bg-orange px-4 py-1 rounded text-black font-semibold hover:bg-dark-orange transition-all duration-200", label: "Close" }
-            ]}
+            buttons={[]}
           >
             <div className="relative mb-4 overflow-hidden h-96">
               <Image 
