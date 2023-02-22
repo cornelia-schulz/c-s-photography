@@ -52,7 +52,7 @@ export default function Photograph({ images, expression }) {
     <Head>
       <title>Galleries - Cornelia Schulz Photography</title>
     </Head>
-    <h1 className="mb-4">Photographs</h1>
+    <h1 className="mb-4 text-center tracking-widest">Photographs</h1>
     <section className="grid gap-5 md:grid-cols-3">
       {sortedImages && sortedImages.map((image, index) => (
         <div key={index} className="text-center">

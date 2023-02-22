@@ -30,18 +30,19 @@ export default function Navbar({page}) {
   return (
     <nav className="w-full">
       <div className="flex flex-col items-center">
-        <Link href="/">
+        <Link className="relative h-[100px] sm:h-[64px] w-[354px] sm:w-[192px]" href="/">
           <Image
             src="/images/CS_photgraphy_transparent-white.png"
             alt="Cornelia Schulz Photography Logo"
-            className="w-auto"
-            width={190}
-            height={80}
+            className="w-full"
+            fill
+            sizes="(max-width: 768px) 100vw,
+                   (max-width: 1200px) 50vw)"
             priority
           />
         </Link>
         <button
-         className="sm:hidden text-center"
+         className="sm:hidden text-center font-serif text-xl mt-2"
          onClick={() => {
             setMenuShow(!menuShow)
           }}>Menu</button>
