@@ -54,6 +54,9 @@ export default function Navbar({page}) {
                 className={`w-full no-underline sm:w-auto hover:text-orange hover:underline ${page.toLowerCase() === menuItem.name.toLowerCase() ? "text-orange" : "text-white"}`}
                 href={menuItem.link}
                 aria-current="page"
+                onClick={() => {
+                  setMenuShow(!menuShow)
+                }}
               >
                 {menuItem.name}
               </Link>

@@ -43,7 +43,7 @@ export default function Photographs({ images }) {
               </div>
             </Link>
           </div>
-          <Link href="/gallery">
+          <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
             {image.title}
           </Link>
         </div>

@@ -20,7 +20,7 @@ export async function getStaticProps() {
 export default function Home({ images }) {
   return (
     <>
-    <h1 className="font-normal leading-[88px] text-[22px] text-center tracking-[19px]">The Photography of <span className="block text-[42px] tracking-[17px]">Cornelia Schulz</span></h1>
+    <h1 className="font-normal sm:leading-[88px] text-[22px] text-center tracking-widest sm:tracking-[19px]">The Photography of <span className="block text-[32px] sm:text-[42px] tracking-[17px]">Cornelia Schulz</span></h1>
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
         <div className="relative">
           <Link href="/gallery">
@@ -36,7 +36,7 @@ export default function Home({ images }) {
                 />
             </div>
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center sm:text-4xl text-3xl">
             <Link className="font-serif hover:text-orange" href="/gallery">
               Photographs
             </Link>
@@ -56,7 +56,7 @@ export default function Home({ images }) {
             />
             </div>
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center sm:text-4xl text-3xl">
             <Link className="font-serif hover:text-orange" href="/about">
               About
             </Link>
@@ -76,7 +76,7 @@ export default function Home({ images }) {
               />
               </div>
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center sm:text-4xl text-3xl">
             <Link className="font-serif hover:text-orange" href="/contact">
               Contact
             </Link>
@@ -96,7 +96,7 @@ export default function Home({ images }) {
               />
               </div>
           </Link>
-          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center text-4xl">
+          <div className="overlay absolute inset-x-0 inset-y-1/2 h-16 bg-black/50 flex justify-center items-center sm:text-4xl text-3xl">
             <Link className="font-serif hover:text-orange" href="/prints">
               Prints
             </Link>
