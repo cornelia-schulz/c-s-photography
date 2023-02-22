@@ -9,9 +9,9 @@ export default function About() {
       <Head>
         <title>About - Cornelia Schulz Photography</title>
       </Head>
-      <h1 className="text-2xl text-center mb-6 mt-6">About Cornelia Schulz</h1>
-      <main className="flex flex-col md:flex-row">
-        <article className="flex-auto md:w-40 mr-4">
+      <h1 className="text-2xl text-center md:mt-20 mb-6 mt-6">About Cornelia Schulz</h1>
+      <main className="flex flex-col md:mt-12 md:flex-row">
+        <article className="flex-auto md:w-40 mr-4 text-lg">
           <p className="mb-3">
             Quite simply, I just love taking photos. Blending this with my
             fascination with the natural world provides me with heaps of

@@ -84,8 +84,8 @@ export default function Contact() {
         <title>Contact - Cornelia Schulz Photography</title>
       </Head>
       <h1 className="text-2xl text-center mb-6 mt-6">Contact Me</h1>
-      <p className="text-center">Please feel free to get in touch with any questions or comments via the form below.</p>
-      <p className="text-center mb-4">Thank you.</p>
+      <p className="text-center text-lg">Please feel free to get in touch with any questions or comments via the form below.</p>
+      <p className="text-center mb-4 text-lg">Thank you.</p>
       <div className="text-orange">
         {error}
       </div>
