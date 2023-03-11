@@ -22,7 +22,7 @@ export default function Prints() {
       </div>
       <main className="flex flex-col md:flex-row">
         <article className="flex-auto md:w-40 mr-4">
-          <h2 className="text-xl text-center m-5">Would you like one of my prints on your on your wall?</h2>
+          <h2 className="text-xl text-center m-5">Would you like one of my prints on your wall?</h2>
           <p className="mb-3">
             You can order most of my images directly at Red Bubble:
             <Link legacyBehavior href="https://www.redbubble.com/people/firzhugh/shop?asc=u&ref=account-nav-dropdown">
