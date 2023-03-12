@@ -11,6 +11,7 @@ export async function getStaticProps() {
   })
   const { resources } = results
   const images = mapImageResources(resources)
+
   return {
     props: {
       images
@@ -26,8 +27,8 @@ export default function Photographs({ images }) {
     </Head>
     <h1 className="text-2xl tracking-widest text-center mb-6 mt-6">Collections</h1>
     <section className="grid gap-5 md:grid-cols-3">
-      {images && images.map((image, index) => (
-        <div key={index} className="text-center">
+      {images && images.map((image) => (
+        <div key={image.id} className="text-center">
           <div className="relative mb-4">
             <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
               <div className="relative h-60 overflow-hidden">
@@ -63,6 +64,3 @@ Photographs.getLayout = function getLayout(page) {
     </Layout>
   )
 }
-
- 
-

@@ -30,7 +30,7 @@ export default function Navbar({page}) {
   return (
     <nav className="w-full">
       <div className="flex flex-col items-center">
-        <Link className="relative h-[100px] sm:h-[64px] w-[354px] sm:w-[192px]" href="/">
+        <Link className="relative h-[100px] sm:h-[64px] w-[330px] sm:w-[192px]" href="/">
           <Image
             src="/images/CS_photgraphy_transparent-white.png"
             alt="Cornelia Schulz Photography Logo"
