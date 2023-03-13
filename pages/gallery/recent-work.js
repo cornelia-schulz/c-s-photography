@@ -9,7 +9,6 @@ export async function getStaticProps() {
   const results = await getFlickrPhotos()
 
   const { resources } = results
-  console.log('Results: ', results, 'resources: ', resources)
   const images = mapFlickrImageResources(results)
 
   return {

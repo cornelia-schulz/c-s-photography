@@ -12,6 +12,13 @@ export async function getStaticProps() {
   const { resources } = results
   const images = mapImageResources(resources)
 
+  images.forEach(function(item,i){
+    if(item.title === "Personal Favourites"){
+      images.splice(i, 1);
+      images.unshift(item);
+    }
+  })
+
   return {
     props: {
       images
