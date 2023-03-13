@@ -113,7 +113,7 @@ export default function Modal ({
               </div>
               {/*} using img tag rather than Image because of sizing issues */}
                 <img 
-                  src={currentImage.image}
+                  src={currentImage.url}
                   alt={currentImage.title}
                   className={`${currentImage.landscape ? 'max-w-full h-auto max-h-[80vh] mx-auto' : 'w-auto h-[80vh] mx-auto'}`}
                 />

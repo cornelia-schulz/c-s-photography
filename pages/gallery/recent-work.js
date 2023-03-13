@@ -29,33 +29,28 @@ export default function Recent({ images }) {
       <section className="grid gap-5 md:grid-cols-3">
         {images && images.map((image, index) => (
           <div key={image.id} className="text-center">
-            <div className="relative mb-4">
-              <div className="relative h-60 overflow-hidden">
-                <Modal
-                  title={image.title}
-                  images={images}
-                  image={index}
-                  content={""}
-                  buttons={[]}
-                >
-                  <div className="relative mb-4 overflow-hidden h-96">
-                    <Image 
-                      src={image.url}
-                      alt={image.title}
-                      className="main-image object-cover object-bottom"
-                      fill
-                      sizes="(max-width: 768px) 100vw,
-                            (max-width: 1200px) 50vw)
-                            33vw"
-                      placeholder="blur"
-                      blurDataURL="/images/blur.jpg"
-                    />
-                  </div>
-                  <p className="hover:text-orange">{image.title}</p>
-                </Modal>
+            <Modal
+              title={image.title}
+              images={images}
+              image={index}
+              content={""}
+              buttons={[]}
+            >
+              <div className="relative mb-4 overflow-hidden h-96">
+                <Image 
+                  src={image.url}
+                  alt={image.title}
+                  className="main-image object-cover object-bottom"
+                  fill
+                  sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw)
+                        33vw"
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jpg"
+                />
               </div>
               <p className="hover:text-orange">{image.title}</p>
-            </div>
+            </Modal>
           </div>
         ))}
       </section>

@@ -33,7 +33,7 @@ export default function Photographs({ images }) {
             <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
               <div className="relative h-60 overflow-hidden">
                 <Image 
-                  src={image.image}
+                  src={image.url}
                   alt={image.title}
                   className="main-image object-cover"
                   fill

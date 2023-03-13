@@ -66,7 +66,7 @@ export default function Photograph({ images, expression }) {
           >
             <div className="relative mb-4 overflow-hidden h-96">
               <Image 
-                src={image.image}
+                src={image.url}
                 alt={image.title}
                 className="main-image object-cover object-bottom"
                 fill
