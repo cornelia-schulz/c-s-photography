@@ -55,7 +55,7 @@ export default function Photograph({ images, expression }) {
     <h1 className="mb-4 text-center tracking-widest">Photographs</h1>
     <section className="grid gap-5 md:grid-cols-3">
       {sortedImages && sortedImages.map((image, index) => (
-        <div key={index} className="text-center">
+        <div key={image.id} className="text-center">
           <Modal
             expression={expression}
             title={image.title}
@@ -66,7 +66,7 @@ export default function Photograph({ images, expression }) {
           >
             <div className="relative mb-4 overflow-hidden h-96">
               <Image 
-                src={image.image}
+                src={image.url}
                 alt={image.title}
                 className="main-image object-cover object-bottom"
                 fill

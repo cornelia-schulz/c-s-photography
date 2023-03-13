@@ -108,12 +108,12 @@ export default function Modal ({
                 </div>
               </div>
               <div className="absolute w-full flex justify-between top-1/2 left-0 transform -translate-y-1/2 z-10">
-                <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
-                <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-20 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
+                <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
+                <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
               </div>
               {/*} using img tag rather than Image because of sizing issues */}
                 <img 
-                  src={currentImage.image}
+                  src={currentImage.url}
                   alt={currentImage.title}
                   className={`${currentImage.landscape ? 'max-w-full h-auto max-h-[80vh] mx-auto' : 'w-auto h-[80vh] mx-auto'}`}
                 />
