@@ -20,7 +20,7 @@ export async function getStaticProps() {
 export default function Home({ images }) {
   return (
     <>
-    <h1 className="font-normal sm:leading-[88px] text-[22px] text-center tracking-widest sm:tracking-[19px]">The Photography of <span className="block text-[32px] sm:text-[42px] tracking-[17px]">Cornelia Schulz</span></h1>
+      <h1 className="font-normal sm:leading-[88px] text-[22px] text-center tracking-widest sm:tracking-[19px]">The Photography of <span className="block text-[32px] sm:text-[42px] tracking-[17px]">Cornelia Schulz</span></h1>
       <section className="grid gap-5 md:grid-cols-2 md:grid-rows-2 mx-3 mt-6 pl-3">
         <div className="relative">
           <Link href="/gallery">
