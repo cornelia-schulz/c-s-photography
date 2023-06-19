@@ -89,7 +89,7 @@ export default function Photograph({ images, expression }) {
   Photograph.getLayout = function getLayout(page) {
     return (
       <Layout>
-        <Navbar page="photographs" />
+        <Navbar page="photograph" />
         {page}
       </Layout>
     )

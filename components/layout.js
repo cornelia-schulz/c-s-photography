@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Footer from './footer'
-import Script from 'next/script'
+// import Script from 'next/script'
 
 const name = 'Cornelia'
 export const siteTitle = 'Cornelia Schulz Photography'
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main>
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
         />
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
 
             gtag('config', 'GA_MEASUREMENT_ID');
           `}
-        </Script>
+        </Script> */}
         {children}
       </main>
       <Footer />

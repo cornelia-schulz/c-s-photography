@@ -115,7 +115,7 @@ export default function Modal ({
                 <img 
                   src={currentImage.url}
                   alt={currentImage.title}
-                  className={`${currentImage.landscape ? 'max-w-full h-auto max-h-[80vh] mx-auto' : 'w-auto h-[80vh] mx-auto'}`}
+                  className={`${currentImage.landscape ? 'max-w-full h-auto max-h-[80vh] mx-auto shadow-lg' : 'w-auto h-[80vh] mx-auto shadow-lg'}`}
                 />
               <p className="text-md mt-4 text-black">{content}</p>
               <div className="flex justify-end">
