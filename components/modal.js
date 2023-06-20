@@ -46,6 +46,11 @@ export default function Modal ({
 
     const handleChange = () => {
       setIsOpen(!isOpen)
+      if (!isOpen) {
+        document.body.classList.add('modal-open')
+      } else {
+        document.body.classList.remove('modal-open')
+      }
     }
 
     const nextImage = () => {
@@ -96,7 +101,7 @@ export default function Modal ({
           leaveTo="opacity-0 scale-75"
           leaveFrom="opacity-100 scale-100"
         >
-          <div style={{ zIndex: '2' }} className="flex justify-center items-center w-screen h-screen bg-opacity-80 bg-black absolute left-0 top-0">
+          <div style={{ zIndex: '2' }} className="flex justify-center items-center w-screen h-screen bg-opacity-95 bg-black absolute left-0 top-0">
             <div className={`${classes ? classes : 'p-4 bg-white rounded-lg relative'}`}>
               <div className="w-full flex justify-between items-center mb-6">
                 <h3 className="font-normal text-[22px] text-lg text-black sm:tracking-[17px]">{currentImage.title}</h3>
