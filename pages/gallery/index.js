@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
@@ -27,6 +28,7 @@ export async function getStaticProps() {
 }
 
 export default function Photographs({ images }) {
+  const [isDynamic, setIsDynamic] = useState(true)
   return (
   <>
     <Head>
@@ -37,7 +39,7 @@ export default function Photographs({ images }) {
       {images && images.map((image) => (
         <div key={image.id} className="text-center">
           <div className="relative mb-4">
-            <Link href={"/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
+            <Link href={image.title.toLowerCase().replace(/ /g, '-') === 'recent-work' ? "/"+image.title.toLowerCase().replace(/ /g, '-') : "/gallery/"+image.title.toLowerCase().replace(/ /g, '-')}>
               <div className="relative h-60 overflow-hidden">
                 <Image 
                   src={image.url}

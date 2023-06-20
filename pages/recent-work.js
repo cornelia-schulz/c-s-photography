@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Navbar from '../../components/navbar'
-import Layout from '../../components/layout'
-import Modal from '../../components/modal'
-import { getFlickrPhotos, mapFlickrImageResources } from '../../lib/flickr'
+import Navbar from '../components/navbar'
+import Layout from '../components/layout'
+import Modal from '../components/modal'
+import { getFlickrPhotos, mapFlickrImageResources } from '../lib/flickr'
 
 export async function getStaticProps() {
   const results = await getFlickrPhotos()
