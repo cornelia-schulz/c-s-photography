@@ -8,7 +8,7 @@ export default function FourOhFour() {
   return (
       <div>
         <Head>
-          <title>Cornelia Schulz Photography</title>
+          <title>Cornelia Schulz Photography - 404</title>
         </Head>
           <h1 className="text-center text-4xl my-4">404 - Page Not Found</h1>
           <div className="flex justify-center mb-10">

@@ -25,6 +25,10 @@ h1, h2, h3 {
   font-family: 'cinzel-decorative';
 }
 
+main {
+  height: 100%;
+}
+
 @font-face {
   font-family: 'cinzel-decorative';
   src: url('/fonts/CinzelDecorative-Regular.ttf');
@@ -34,5 +38,12 @@ h1, h2, h3 {
   .main-image {
     border: 8px solid #d9d9d9 !important;
   }  
+}
+
+.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px;
+  position: fixed;
 }
 

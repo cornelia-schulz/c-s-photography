@@ -107,6 +107,7 @@ export default function Contact() {
           <button type="submit" className={`${!formValid ? "bg-grey border-2" : "bg-orange hover:bg-dark-orange text-black"} px-4 py-1 rounded font-semibold`} disabled={!formValid}>Send</button>
         </p>
       </form>
+      {/* https://www.npmjs.com/package/react-jotform-embed */}
     </div>
     )
 }
