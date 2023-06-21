@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
+import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Success() {
