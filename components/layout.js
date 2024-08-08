@@ -7,7 +7,7 @@ export const siteTitle = 'Cornelia Schulz Photography'
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col h-screen justify-between px-5 mx-auto my-3 max-w-7xl">
+    <div className="flex flex-col justify-between px-5 mx-auto my-3 max-w-7xl">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
