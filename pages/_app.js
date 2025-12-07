@@ -1,10 +1,14 @@
 import '../styles/reset.css'
 import '../styles/globals.css'
-
-if (process.env.NODE_TLS_REJECT_UNAUTHORIZED) process.env.NODE_TLS_REJECT_UNAUTHORIZED
+import { GoogleAnalytics } from "nextjs-google-analytics"
 
 export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page)
 
-  return getLayout(<Component {...pageProps} />)
+  return getLayout(
+    <>
+      <GoogleAnalytics trackPageViews />
+      <Component {...pageProps} />
+    </>
+  )
 }
