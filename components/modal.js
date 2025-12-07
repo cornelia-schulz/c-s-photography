@@ -106,11 +106,15 @@ export default function Modal ({
                     <rect x={0} y={0} width={36} height={36} fillOpacity={0} />
                   </svg>
                 </div>
+                <div className="absolute w-full flex justify-between top-1/2 left-0 transform -translate-y-1/2 z-10">
+                  <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
+                  <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
+                </div>
               </div>
-              <div className="absolute w-full flex justify-between top-1/2 left-0 transform -translate-y-1/2 z-10">
+              {/* <div className="absolute w-full flex justify-between top-1/2 left-0 transform -translate-y-1/2 z-10">
                 <button className={`${isFirst ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl ml-5 rounded-full px-4 py-1'}`} onClick={previousImage} disabled={isFirst}>&lt;</button>
                 <button className={`${isLast ? 'invisible' : 'bg-white bg-opacity-30 text-orange text-4xl mr-5 rounded-full px-4 py-1'}`} onClick={nextImage} disabled={isLast}>&gt;</button>
-              </div>
+              </div> */}
               {/*} using img tag rather than Image because of sizing issues */}
                 <img 
                   src={currentImage.url}
