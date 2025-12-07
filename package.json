@@ -19,6 +19,7 @@
     "react-dom": "19.2.1"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.1",
     "autoprefixer": "^10.4.7",
     "eslint": "^9.39.1",
     "eslint-config-next": "16.0.7",
