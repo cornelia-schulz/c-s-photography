@@ -4,8 +4,5 @@
   "version": "1.0.0",
   "private": true,
   "author": "Netlify",
-  "license": "MIT",
-  "dependencies": {
-    "@netlify/plugin-nextjs": "4.24.3"
-  }
+  "license": "MIT"
 }
